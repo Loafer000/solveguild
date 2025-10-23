@@ -1,0 +1,74 @@
+{
+  "name": "solveguild-frontend",
+  "version": "1.0.0",
+  "description": "Frontend React application for SolveGuild platform",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "react-router-dom": "^6.15.0",
+    "axios": "^1.5.0",
+    "socket.io-client": "^4.7.2",
+    "react-query": "^3.39.3",
+    "react-hook-form": "^7.45.4",
+    "react-hot-toast": "^2.4.1",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.263.1",
+    "react-dropzone": "^14.2.3",
+    "react-markdown": "^9.0.1",
+    "react-syntax-highlighter": "^15.5.0",
+    "date-fns": "^2.30.0",
+    "react-intersection-observer": "^9.5.2",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-modal": "^3.16.1",
+    "react-select": "^5.7.4",
+    "react-quill": "^2.0.0",
+    "web-vitals": "^2.1.4",
+    "@razorpay/react": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src --ext .js,.jsx",
+    "lint:fix": "eslint src --ext .js,.jsx --fix",
+    "preview": "serve -s build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:5000",
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "eslint-config-react": "^1.1.7",
+    "serve": "^14.2.0"
+  },
+  "keywords": [
+    "react",
+    "frontend",
+    "ui",
+    "freelancing"
+  ],
+  "author": "SolveGuild Team",
+  "license": "MIT"
+}

@@ -1,0 +1,50 @@
+{
+  "name": "solveguild-platform",
+  "version": "1.0.0",
+  "description": "A revolutionary freelancing platform where clients post issues and freelancers approach them",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm start",
+    "backend:install": "cd backend && npm install",
+    "frontend:install": "cd frontend && npm install",
+    "install:all": "npm run backend:install && npm run frontend:install",
+    "build": "cd frontend && npm run build",
+    "setup": "node scripts/setup.js",
+    "test": "npm run backend:test && npm run frontend:test",
+    "backend:test": "cd backend && npm test",
+    "frontend:test": "cd frontend && npm test",
+    "lint": "npm run backend:lint && npm run frontend:lint",
+    "backend:lint": "cd backend && npm run lint",
+    "frontend:lint": "cd frontend && npm run lint",
+    "clean": "npm run backend:clean && npm run frontend:clean",
+    "backend:clean": "cd backend && rm -rf node_modules",
+    "frontend:clean": "cd frontend && rm -rf node_modules"
+  },
+  "keywords": [
+    "freelancing",
+    "reverse-platform",
+    "technical-community",
+    "doubt-solving",
+    "premium-subscription"
+  ],
+  "author": "SolveGuild Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solveguild/platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/solveguild/platform/issues"
+  },
+  "homepage": "https://solveguild.com"
+}
